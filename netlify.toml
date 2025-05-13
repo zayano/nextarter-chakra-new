@@ -1,0 +1,10 @@
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[build]
+  command = 'pnpm build'
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION="22"
+  COREPACK_INTEGRITY_KEYS="0"
