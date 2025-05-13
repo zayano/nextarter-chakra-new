@@ -1,14 +1,14 @@
 import { Box, Button, Flex, Image, Link } from '@chakra-ui/react';
 import { AiFillGithub } from 'react-icons/ai';
 
-const repoLink = 'https://github.com/agustinusnathaniel/nextarter-chakra';
+const repoLink = 'https://github.com/zayano/nextarter-chakra-new';
 
 export const CTASection = () => {
   return (
     <Box textAlign="center">
       <Box transform="scale(0.85)">
         <Flex marginY={4} justifyContent="center" gap={2}>
-          <Link
+          {/* <Link
             aria-label="Deploy to Vercel"
             target="_blank"
             rel="noopener noreferrer"
@@ -20,7 +20,7 @@ export const CTASection = () => {
               height={10}
               fit="contain"
             />
-          </Link>
+          </Link> */}
 
           <Link
             aria-label="Deploy to Netlify"
@@ -41,7 +41,7 @@ export const CTASection = () => {
       <Flex justifyContent="center" alignItems="center" gap={2}>
         <Button asChild size="sm">
           <a
-            href="https://github.com/agustinusnathaniel/nextarter-chakra/generate"
+            href="https://github.com/zayano/nextarter-chakra-new/generate"
             target="_blank"
           >
             Use This Template
