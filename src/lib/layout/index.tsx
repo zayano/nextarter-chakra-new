@@ -13,14 +13,13 @@ type LayoutProps = {
 export const Layout = ({ children }: LayoutProps) => {
   return (
     <Box
-      width="100vw"
-      height="100vh"
-      margin="0"
-      padding="0"
+      minHeight="100vh"
+      display="flex"
+      flexDirection="column"
       transition="0.5s ease-out"
     >
       <Header />
-      <Box as="main" marginY={22}>
+      <Box as="main" flex="1">
         {children}
       </Box>
       <Footer />
