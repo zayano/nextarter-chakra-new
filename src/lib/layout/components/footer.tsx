@@ -1,23 +1,21 @@
 import { useEffect, useState } from 'react';
-import { useColorModeValue } from '@/components/ui/color-mode';
 import { Box, Flex, Icon, Link, Text } from '@chakra-ui/react';
 import { FaHeart } from 'react-icons/fa';
+import { useColorModeValue } from '@/components/ui/color-mode';
 
 export const Footer = () => {
-  // Pastikan hooks didefinisikan di atas, di luar kondisi
   const [hasMounted, setHasMounted] = useState(false);
 
-  // Menentukan warna berdasarkan mode
+  // Panggil SEMUA hooks sebelum kondisi
   const bgColor = useColorModeValue('gray.100', 'gray.900');
   const textColor = useColorModeValue('gray.700', 'gray.300');
   const hoverColor = useColorModeValue('teal.600', 'teal.300');
+  const footerNoteColor = useColorModeValue('gray.500', 'gray.500');
 
-  // Menunggu hingga komponen mount
   useEffect(() => {
     setHasMounted(true);
   }, []);
 
-  // Render kosong jika belum mounted
   if (!hasMounted) return null;
 
   return (
@@ -31,13 +29,13 @@ export const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             fontWeight="semibold"
-            color={useColorModeValue('teal.600', 'teal.300')}
+            color={hoverColor}
             _hover={{ textDecoration: 'underline' }}
           >
             agustinusnathaniel.com
           </Link>
         </Text>
-        <Text fontSize="xs" color={useColorModeValue('gray.500', 'gray.500')}>
+        <Text fontSize="xs" color={footerNoteColor}>
           All rights reserved.
         </Text>
       </Flex>
