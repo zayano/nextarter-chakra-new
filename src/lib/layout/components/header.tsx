@@ -10,6 +10,7 @@ import {
   HStack,
   Spacer,
   Button,
+  Image,
 } from '@chakra-ui/react';
 import { FaHeart } from 'react-icons/fa';
 import NextLink from 'next/link';
@@ -45,10 +46,16 @@ export const Header = () => {
         <Link
           as={NextLink}
           href="/"
-          color={headingColor}
           _hover={{ textDecoration: 'none' }}
+          display="inline-block"
         >
-          MyApp
+          <Image
+            src="/vercel.svg"
+            alt="MyApp Logo"
+            height="30px"
+            width="auto"
+            objectFit="contain"
+          />
         </Link>
       </Heading>
 
