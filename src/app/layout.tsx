@@ -12,6 +12,9 @@ const APP_NAME = 'nextarter-chakra';
 export const metadata: Metadata = {
   title: { default: APP_NAME, template: '%s | nextarter-chakra' },
   description: 'Next.js + chakra-ui + TypeScript template',
+  icons: {
+    icon: '/zayano.png',
+  },
   applicationName: APP_NAME,
   appleWebApp: {
     capable: true,
@@ -31,7 +34,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    creator: '@agstnsnathaniel',
+    creator: '@Zaditno',
     card: 'summary_large_image',
   },
 };
