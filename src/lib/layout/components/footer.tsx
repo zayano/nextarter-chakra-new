@@ -25,14 +25,14 @@ export const Footer = () => {
           © {new Date().getFullYear()} — Built with{' '}
           <Icon as={FaHeart} color="red.400" mx={1} /> by{' '}
           <Link
-            href="https://agustinusnathaniel.com"
+            href="https://iamzayano.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
             fontWeight="semibold"
             color={hoverColor}
             _hover={{ textDecoration: 'underline' }}
           >
-            agustinusnathaniel.com
+            iamzayano.vercel.app
           </Link>
         </Text>
         <Text fontSize="xs" color={footerNoteColor}>
