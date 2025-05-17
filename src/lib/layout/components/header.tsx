@@ -1,18 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ColorModeButton, useColorModeValue } from '@/components/ui/color-mode';
-import {
-  Box,
-  Flex,
-  Icon,
-  Link,
-  Text,
-  Heading,
-  HStack,
-  Spacer,
-  Button,
-  Image,
-} from '@chakra-ui/react';
-import { FaHeart } from 'react-icons/fa';
+import { Flex, Link, Heading, HStack, Image } from '@chakra-ui/react';
 import NextLink from 'next/link';
 
 export const Header = () => {
@@ -24,7 +12,6 @@ export const Header = () => {
 
   // Define the colors first to ensure they are computed before the conditional render
   const bgColor = useColorModeValue('gray.100', 'gray.900');
-  const headingColor = useColorModeValue('teal.600', 'teal.200');
   const hoverBg = useColorModeValue('teal.200', 'teal.600');
 
   if (!hasMounted) return null; // Only render after mounting
@@ -41,6 +28,7 @@ export const Header = () => {
       position="sticky"
       top={0}
       zIndex={1000}
+      justify={'space-between'}
     >
       <Heading size="md">
         <Link
@@ -50,7 +38,7 @@ export const Header = () => {
           display="inline-block"
         >
           <Image
-            src="/vercel.svg"
+            src="/zayano.png"
             alt="MyApp Logo"
             height="30px"
             width="auto"
@@ -59,21 +47,17 @@ export const Header = () => {
         </Link>
       </Heading>
 
-      <Spacer />
-
-      <HStack gap={4}>
-        <Button variant="ghost" _hover={{ bg: hoverBg }}>
+      <HStack justify={'space-between'} gap={20}>
+        <Link href={'/'} _hover={{ bg: hoverBg }}>
           Home
-        </Button>
-        <Button variant="ghost" _hover={{ bg: hoverBg }}>
+        </Link>
+        <Link href={'/about'} _hover={{ bg: hoverBg }}>
           About
-        </Button>
-        <Button variant="ghost" _hover={{ bg: hoverBg }}>
+        </Link>
+        <Link href={'/contact'} _hover={{ bg: hoverBg }}>
           Contact
-        </Button>
+        </Link>
       </HStack>
-
-      <Spacer />
 
       <HStack gap={4}>
         <ColorModeButton _hover={{ bg: hoverBg }} />
