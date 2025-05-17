@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ColorModeButton, useColorModeValue } from '@/components/ui/color-mode';
 import { Flex, Link, Heading, HStack, Image } from '@chakra-ui/react';
-import NextLink from 'next/link';
 
 export const Header = () => {
   const [hasMounted, setHasMounted] = useState(false);
@@ -12,7 +11,6 @@ export const Header = () => {
 
   // Define the colors first to ensure they are computed before the conditional render
   const bgColor = useColorModeValue('gray.100', 'gray.900');
-  const hoverBg = useColorModeValue('teal.200', 'teal.600');
 
   if (!hasMounted) return null; // Only render after mounting
 
@@ -32,7 +30,6 @@ export const Header = () => {
     >
       <Heading size="md">
         <Link
-          as={NextLink}
           href="/"
           _hover={{ textDecoration: 'none' }}
           display="inline-block"
@@ -48,19 +45,13 @@ export const Header = () => {
       </Heading>
 
       <HStack justify={'space-between'} gap={20}>
-        <Link href={'/'} _hover={{ bg: hoverBg }}>
-          Home
-        </Link>
-        <Link href={'/about'} _hover={{ bg: hoverBg }}>
-          About
-        </Link>
-        <Link href={'/contact'} _hover={{ bg: hoverBg }}>
-          Contact
-        </Link>
+        <Link href={'/'}>Home</Link>
+        <Link href={'/about'}>About</Link>
+        <Link href={'/contact'}>Contact</Link>
       </HStack>
 
       <HStack gap={4}>
-        <ColorModeButton _hover={{ bg: hoverBg }} />
+        <ColorModeButton />
       </HStack>
     </Flex>
   );
