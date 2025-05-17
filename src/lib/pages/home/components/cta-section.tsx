@@ -26,7 +26,7 @@ export const CTASection = () => {
             aria-label="Deploy to Netlify"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://app.netlify.com/start/deploy?repository=https://github.com/agustinusnathaniel/nextarter-chakra"
+            href="https://app.netlify.com/start/deploy?repository=https://github.com/zayano/nextarter-chakra-new"
           >
             <Image
               src="https://www.netlify.com/img/deploy/button.svg"
