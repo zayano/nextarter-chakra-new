@@ -7,7 +7,7 @@ export const Footer = () => {
   const [hasMounted, setHasMounted] = useState(false);
 
   // Panggil SEMUA hooks sebelum kondisi
-  const bgColor = useColorModeValue('gray.100', 'gray.900');
+  const bgColor = useColorModeValue('primaryLight', 'primaryDark');
   const textColor = useColorModeValue('gray.700', 'gray.300');
   const hoverColor = useColorModeValue('teal.600', 'teal.300');
   const footerNoteColor = useColorModeValue('gray.500', 'gray.500');

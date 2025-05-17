@@ -10,7 +10,7 @@ export const Header = () => {
   }, []);
 
   // Define the colors first to ensure they are computed before the conditional render
-  const bgColor = useColorModeValue('gray.100', 'gray.900');
+  const bgColor = useColorModeValue('primaryLight', 'primaryDark');
 
   if (!hasMounted) return null; // Only render after mounting
 
