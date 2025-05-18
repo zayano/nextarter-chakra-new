@@ -6,11 +6,11 @@ export const Footer = () => {
       <Text fontSize="sm">
         {new Date().getFullYear()} -{' '}
         <Link
-          href="https://agustinusnathaniel.com"
+          href="https://iamzayano.vercel.app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          agustinusnathaniel.com
+          iamzayano.vercel.app
         </Link>
       </Text>
     </Flex>
