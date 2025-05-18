@@ -16,6 +16,12 @@ const customTheme = createSystem(defaultConfig, {
         primary: {
           value: '#1E90FF',
         },
+        accent: {
+          value: '#FF69B4',
+        },
+        accentDark: {
+          value: '#FF1493',
+        },
         secondaryDark: {
           value: '#FF4500',
         },
