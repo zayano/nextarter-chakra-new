@@ -12,18 +12,14 @@ type LayoutProps = {
 
 export const Layout = ({ children }: LayoutProps) => {
   return (
-    <Box
-      width="100vw"
-      height="100vh"
-      margin="0"
-      padding="0"
-      transition="0.5s ease-out"
-    >
-      <Header />
-      <Box as="main" marginY={22}>
-        {children}
+    <Box margin="0 auto" maxWidth={800} transition="0.5s ease-out">
+      <Box margin="8">
+        <Header />
+        <Box as="main" marginY={22}>
+          {children}
+        </Box>
+        <Footer />
       </Box>
-      <Footer />
     </Box>
   );
 };
