@@ -1,8 +1,8 @@
 {
-  "name": "nextarter-chakra",
+  "name": "nextarter-chakra-new",
   "version": "0.1.0",
   "private": true,
-  "author": "agustinusnathaniel",
+  "author": "zayano",
   "engines": {
     "node": ">=22.11.x"
   },
