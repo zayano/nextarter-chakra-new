@@ -4,7 +4,7 @@ export const SomeText = () => {
   return (
     <Grid textAlign="center">
       <Heading as="h1" size="2xl" fontWeight="bold">
-        nextarter-chakra
+        nextarter-chakra-new
       </Heading>
 
       <Text fontSize="xs">

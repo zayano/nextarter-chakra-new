@@ -12,7 +12,7 @@ export const CTASection = () => {
             aria-label="Deploy to Vercel"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fagustinusnathaniel%2Fnextarter-chakra"
+            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fzayano%2Fnextarter-chakra-new"
           >
             <Image
               src="https://vercel.com/button"

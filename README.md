@@ -39,7 +39,7 @@
 1. You can either click `Use this template` button on this repository and clone the repo or directly from your terminal:
 
 ```bash
-npx degit zayano/nextarter-chakra-new-new <YOUR_APP_NAME>
+npx degit zayano/nextarter-chakra-new <YOUR_APP_NAME>
 ```
 
 2. After cloning the project, run this command: `pnpm` or `pnpm install`
