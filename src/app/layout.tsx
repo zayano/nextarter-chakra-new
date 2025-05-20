@@ -10,7 +10,10 @@ type RootLayoutProps = {
 const APP_NAME = 'nextarter-chakra-new';
 
 export const metadata: Metadata = {
-  title: { default: APP_NAME, template: '%s | nextarter-chakra-new' },
+  title: {
+    default: `${process.env.NEXT_PUBLIC_APP_NAME} | ${process.env.NODE_ENV}`,
+    template: '%s | nextarter-chakra-new',
+  },
   description: 'Next.js + chakra-ui + TypeScript template',
   icons: {
     icon: '/zayano.png',
