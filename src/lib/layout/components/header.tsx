@@ -10,7 +10,13 @@ export const Header = () => {
   }, []);
 
   // Define the colors first to ensure they are computed before the conditional render
-  const bgColor = useColorModeValue('primaryLight', 'primaryDark');
+  const bgColor = useColorModeValue('headerBgLight', 'headerBgDark');
+  const textColor = useColorModeValue('headerTextLight', 'headerTextDark');
+  const textHoverColor = useColorModeValue(
+    'headerTextHoverLight',
+    'headerTextHoverDark'
+  );
+  const bgColorHover = useColorModeValue('secondaryLight', 'secondaryDark');
 
   if (!hasMounted) return null; // Only render after mounting
 
@@ -45,13 +51,30 @@ export const Header = () => {
       </Heading>
 
       <HStack justify={'space-between'} gap={20}>
-        <Link href={'/'}>Home</Link>
-        <Link href={'/about'}>About</Link>
-        <Link href={'/contact'}>Contact</Link>
+        <Link href={'/'} color={textColor} _hover={{ color: textHoverColor }}>
+          Home
+        </Link>
+        <Link
+          href={'/about'}
+          color={textColor}
+          _hover={{ color: textHoverColor }}
+        >
+          About
+        </Link>
+        <Link
+          href={'/contact'}
+          color={textColor}
+          _hover={{ color: textHoverColor }}
+        >
+          Contact
+        </Link>
       </HStack>
 
       <HStack gap={4}>
-        <ColorModeButton />
+        <ColorModeButton
+          color={textColor}
+          _hover={{ color: textHoverColor, bg: bgColorHover }}
+        />
       </HStack>
     </Flex>
   );
