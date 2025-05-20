@@ -7,48 +7,48 @@ const customTheme = createSystem(defaultConfig, {
     tokens: {
       fonts,
       colors: {
-        primaryDark: {
-          value: '#1C86EE',
-        },
-        primaryLight: {
-          value: '#87CEFA',
-        },
-        primary: {
-          value: '#1E90FF',
-        },
-        accent: {
-          value: '#FF69B4',
-        },
-        accentDark: {
-          value: '#FF1493',
-        },
-        secondaryDark: {
-          value: '#FF4500',
-        },
-        secondaryLight: {
-          value: '#FF7F50',
-        },
-        secondary: {
-          value: '#FF6347',
-        },
-        background: {
-          value: '#F0F0F0',
-        },
-        backgroundDark: {
-          value: '#2F4F4F',
-        },
-        backgroundLight: {
-          value: '#FFFFFF',
-        },
-        text: {
-          value: '#333333',
-        },
-        textLight: {
-          value: '#FFFFFF',
-        },
-        textDark: {
-          value: '#000000',
-        },
+        // === Brand Primary (Blue tones) ===
+        primary: { value: '#1E90FF' }, // Dodger Blue
+        primaryDark: { value: '#1A73E8' }, // Google-style Blue
+        primaryLight: { value: '#B3D4FC' }, // Light Blue
+
+        // === Secondary (Orange tones) ===
+        secondary: { value: '#F97316' }, // Orange-500
+        secondaryDark: { value: '#EA580C' },
+        secondaryLight: { value: '#FDBA74' },
+
+        // === Accent (Pink tones) ===
+        accent: { value: '#EC4899' }, // Pink-500
+        accentDark: { value: '#DB2777' },
+        accentLight: { value: '#F9A8D4' },
+
+        // === Backgrounds ===
+        background: { value: '#F9FAFB' }, // Gray-50
+        backgroundLight: { value: '#FFFFFF' },
+        backgroundDark: { value: '#1F2937' }, // Slate-800
+
+        // === Text ===
+        text: { value: '#1F2937' }, // Slate-800
+        textDark: { value: '#E5E7EB' }, // Gray-200
+        textLight: { value: '#FFFFFF' },
+
+        // === Header Colors ===
+        headerBgLight: { value: '#1E90FF' },
+        headerTextLight: { value: '#FFFFFF' },
+        headerTextHoverLight: { value: '#E0F2FF' }, // Biru muda terang untuk hover
+
+        headerBgDark: { value: '#111827' },
+        headerTextDark: { value: '#E5E7EB' },
+        headerTextHoverDark: { value: '#90CDF4' }, // Light blue untuk dark mode hover
+
+        // === Footer Colors ===
+        footerBgLight: { value: '#F1F5F9' },
+        footerTextLight: { value: '#1F2937' },
+        footerTextHoverLight: { value: '#2563EB' }, // Blue-600 saat hover
+
+        footerBgDark: { value: '#1F2937' },
+        footerTextDark: { value: '#E5E7EB' },
+        footerTextHoverDark: { value: '#93C5FD' }, // Blue-300 saat hover
       },
     },
   },
